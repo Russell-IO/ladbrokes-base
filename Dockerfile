@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 RUN set -x && \
   apt-get update && \
-  apt-get -y install python-pip ruby-dev nodejs npm unzip && \
+  apt-get -y install python-pip ruby-dev nodejs npm unzip wget && \
   pip install -U awscli && pip install boto3 && \
   gem install main --no-rdoc --no-ri && \
   gem install aws-sdk --no-rdoc --no-ri && \
