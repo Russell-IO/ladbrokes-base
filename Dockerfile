@@ -6,6 +6,6 @@ RUN set -x && \
   gem install main --no-rdoc --no-ri && \
   gem install aws-sdk --no-rdoc --no-ri && \
   npm install -g cfn-lint && \
-  wget https://releases.hashicorp.com/terraform/0.10.5/terraform_0.10.5_linux_amd64.zip && \
-  unzip -o terraform_0.10.5_linux_amd64.zip -d /bin
+  wget https://releases.hashicorp.com/terraform/0.11.3/terraform_0.11.3_linux_amd64.zip && \
+  unzip -o terraform_0.11.3_linux_amd64.zip -d /bin
 RUN ln -s /usr/bin/nodejs /usr/bin/node
